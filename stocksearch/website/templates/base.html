@@ -1,0 +1,68 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="57x57" href="/static/images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/static/images/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/static/images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/images/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/static/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/static/images/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/static/images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/static/images/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/static/images/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/static/images/manifest.json">
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#4d90fd">
+    <meta name="msapplication-TileImage" content="/static/images/mstile-144x144.png">
+    <meta name="msapplication-config" content="/static/images/browserconfig.xml">
+    <meta name="theme-color" content="#4d90fd">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:site_name" content="LibreStock"/>
+    <meta property="og:title" content="Search 40+ free stock photo websites in one place" />
+    <meta property="og:image" content="http://librestock.com{% static "images/pablo2.png" %}" />
+    <meta property="og:description" content="Librestock is a multisite search engine that scans and indexes the stock photos from 40+ different websites. We provide you with the biggest searchable database of high-quality free stock photos on the internet" />
+    <title>{% block title %}
+    Free Stock Photos · Search 40+ sites with LibreStock
+    {% endblock title %}</title>
+    <meta name="keywords" content="free stock photos, librestock, design resource, creative commons, cc0, high quality,design, code, source, free, freebie, stockphoto, FFCU, free for commercial use, CC, BY, Public Domain Pictures, Creative Commons, license, stockphotos, sharing, community"/>
+    <meta name="description" content="Librestock is a multisite search engine that scans and indexes the stock photos from 40+ different websites. We provide you with the biggest searchable database of high-quality free stock photos on the internet"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}">
+    <script type="text/javascript" src="{% static "js/fuckadblock.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/replace.js" %}"></script>
+    {% block head %}
+        
+    {% endblock head %}
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68574422-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<body>
+{% block body %}
+{% endblock body %}
+<script>
+$("img").one("load", function() {
+  $(this).parent().find('.spinner').hide();
+}).each(function() {
+  if(this.complete) $(this).load();
+});
+
+
+</script>
+</body>
+</html>
